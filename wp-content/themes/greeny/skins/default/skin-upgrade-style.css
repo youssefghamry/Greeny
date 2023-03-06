@@ -1,0 +1,137 @@
+/* Custom layouts
+===============================================================*/
+/* Header fixed positions */
+.sc_layouts_row_fixed_on {
+  background-color: var(--theme-color-alter_bg_color) !important;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* layouts Type Compact
+===============================================================*/
+.sc_layouts_row_type_compact .sc_layouts_iconed_text:not(.sc_layouts_menu_mobile_button):not(.sc_layouts_menu_mobile_button_burger) .sc_layouts_iconed_text_link .sc_layouts_iconed_text_icon {
+  background-color: var(--theme-color-text_link2);
+}
+
+/* Menu 
+===============================================================*/
+/* Mobile Button */
+.sc_layouts_menu_mobile_button,
+.sc_layouts_menu_mobile_button_burger {
+  position: relative;
+}
+.sc_layouts_menu_mobile_button .sc_layouts_item_link,
+.sc_layouts_menu_mobile_button_burger .sc_layouts_item_link {
+  display: flex;
+}
+.sc_layouts_menu_mobile_button .sc_layouts_item_icon,
+.sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon {
+  width: 47px;
+  height: 47px;
+  line-height: 45px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--theme-color-alter_bg_color);
+}
+.sc_layouts_menu_mobile_button .sc_layouts_item_icon:before,
+.sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon:before {
+  font-size: 14px;
+}
+
+/* Booked
+===============================================================*/
+body .booked-calendar-wrap .booked-calendar .booked-appt-list .timeslot .timeslot-people button {
+  color: var(--theme-color-inverse_link) !important;
+  background: var(--theme-color-text_link) !important;
+  border-color: var(--theme-color-text_link) !important;
+}
+body .booked-calendar-wrap .booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover {
+  color: var(--theme-color-inverse_link) !important;
+  background: var(--theme-color-text_hover) !important;
+  border-color: var(--theme-color-text_hover) !important;
+}
+
+/* Services
+===============================================================*/
+.sc_services .sc_services_item .sc_services_item_more_link {
+  text-transform: capitalize;
+}
+
+/* Elementor Tabs 
+===============================================================*/
+.tabs_style_2.elementor-widget-tabs .elementor-tab-title:hover {
+  background-color: #D6E4EE;
+}
+.tabs_style_2.elementor-widget-tabs .elementor-tab-title.elementor-active {
+  background-color: var(--theme-color-text_dark);
+}
+
+/* Booked
+===============================================================*/
+body table.booked-calendar thead tr:first-child th {
+  background-color: var(--theme-color-text_link2) !important;
+}
+
+/* Widget Calendar
+===============================================================*/
+.widget_calendar td#prev a:before, .widget_calendar td#next a:before,
+.widget_calendar .wp-calendar-nav a:before, .wp-block-calendar td#prev a:before,
+.wp-block-calendar td#next a:before, .wp-block-calendar .wp-calendar-nav a:before {
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  left: 5px;
+}
+
+/* Buttons
+===============================================================*/
+.sc_button.sc_button.sc_button_simple.sc_button_with_icon {
+  overflow: visible;
+}
+.sc_button.sc_button.sc_button_simple.sc_button_with_icon .sc_button_icon {
+  -webkit-box-shadow: 0 0 0 4px rgba(214, 228, 241, 0.2);
+  -ms-box-shadow: 0 0 0 4px rgba(214, 228, 241, 0.2);
+  box-shadow: 0 0 0 4px rgba(214, 228, 241, 0.2);
+}
+
+@media (max-width: 1279px) {
+  .sc_layouts_row.sc_layouts_row_fixed_on.sc_layouts_row_fixed_always .custom-logo-link img,
+  .sc_layouts_row.sc_layouts_row_fixed_on.sc_layouts_row_fixed_always .sc_layouts_logo img,
+  .search_modern .search_header_wrap .logo_image,
+  .menu_mobile .sc_layouts_logo img {
+    max-height: 40px;
+  }
+
+  .sc_layouts_menu_mobile_button .sc_layouts_item_icon,
+  .sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon {
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+  }
+
+  .tabs_style_2.elementor-widget-tabs .elementor-tab-desktop-title {
+    padding: 19px 15px 21px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .sc_layouts_menu_mobile_button .sc_layouts_item_icon,
+  .sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon {
+    width: 37px;
+    height: 37px;
+    line-height: 35px;
+  }
+
+  .trx_addons_tooltip {
+    letter-spacing: 0;
+  }
+
+  .woocommerce .woocommerce-ordering select,
+  .ua_gecko.woocommerce .woocommerce-ordering select {
+    text-indent: 0px;
+  }
+}
+
+/*# sourceMappingURL=skin-upgrade-style.css.map */
